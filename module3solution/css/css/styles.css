@@ -1,0 +1,369 @@
+body{
+	font-size: 20px;
+	color: #fff;
+	background-color: #61122f;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#header-nav{
+	background-color: #f6b319;
+	border-radius: 0;
+	border: 0;
+	/*position: relative;*/
+}
+
+#logo-img{
+	background: url('../images/andhra4.jpg') no-repeat;
+	width: 175px;
+	height: 150px;
+	margin: 10px 0px 10px 0px;
+	/*position: relative;
+	right: 100px;*/
+}
+.navbar-brand{
+	padding-top: 0px;
+}
+
+.navbar-brand h1{      /*restaurant name*/
+	font-family: 'Lora', serif;
+	color: #557c3e;
+	font-size: 1.55em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;      /
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 0.75;
+	/*position: relative;     /* I added, My own edit coz title was in middle coz of image*/
+    /*right: 100px;*/
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+.navbar-brand p{    /*styling halal*/
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: bold;
+    margin-top: 15px;
+    /*position: relative;    /* I added, my own edit coz title was in middle coz of image*/
+    /*right: 100px;*/
+}
+
+.navbar-brand p span{
+	vertical-align: middle;
+}
+
+
+#nav-list{
+	margin-top: 5px;
+}
+#nav-list a{
+	color: #951c49;
+	text-align: center;
+}
+#nav-list a:hover{
+	background-color: #e7e7e7;
+}
+#nav-list a span{
+	font-size: 1em;
+}
+#phone{
+	margin-top: 5px;
+}
+#phone a{        /*actual phone number*/
+	text-align: right;
+	padding-bottom: 0;
+}
+#phone div{    /*we deliver*/
+    color: #557c3e;
+    text-align: right;
+    padding-right: 15px;   /*to match with the phone number*/
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle{      /*to fix the halal thing going down*/
+  clear: both;
+  margin-top: -30px;
+}
+/*END OF HEADER*/
+/*Footer*/
+.panel-footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #222;
+	border-top: 0;           /*we are actually overriding bootstrap css class*/
+}
+
+.panel-footer div.row{
+	margin-bottom: 40px;
+}
+#hours, #address{
+	line-height: 2;
+}
+#hours>span, #address>span{
+	font-size: 1.3em;
+	font-weight: bold;
+}
+#address p{
+	color: #557c3e;
+	font-size: .8em;
+	line-height: 1.8;
+}
+#testimonials{
+	font-style: italic;
+}
+#testimonials p:nth-child(2){
+	margin-top: 25px;
+}
+/*Styles for menu,specials and map*/
+#menu-title, #specials-title, #map-tile{
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #3f0c1f;
+	overflow: hidden;
+}
+#menu-title:hover, #specials-title:hover, #map-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-title{
+	background: url('../images/menu3.jpg') no-repeat;
+	background-position: center;
+}
+#specials-title{
+	background: url('../images/special.jpg')no-repeat;
+	background-position: center;
+}
+
+#menu-title span, #specials-title span, #map-tile span{
+	position: absolute;
+	font-family: monospace;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: 0.8;
+}
+/*END OF HOME PAGE*/
+/*START OF CATEGORIES PAGE STYLING*/
+.category-tile{
+	position: relative;
+	border: 2px solid #3f0c1f;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 15px;
+}
+
+.category-tile span{
+       position: absolute;
+       bottom: 0;
+       right: 0;
+       width: 100%;
+       text-align: center;
+       font-size: 1.2em;
+       text-transform: uppercase;
+       background-color: #000;
+       color: #fff;
+       opacity: 0.8            /*similar to menu, map and specials tiles*/
+}
+.category-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-categories + div{        /*div is next sibling of menu categories*/
+   margin-bottom: 50px;
+}
+/*END OF MENU CATEGORIES PAGE*/
+
+/*SINGLE CATEGORY PAGE*/
+.menu-item-tile{
+	margin-bottom: 25px;    /*spearate from the next row*/
+	margin-top: 20px;
+}
+.menu-item-tile hr{
+	width: 80%;
+}
+.menu-item-tile .item-price{
+	font-size: 1.1em;
+	text-align: right;
+	margin-top: -15px;
+	margin-right: -15px;
+}
+.menu-item-tile .item-price span{
+	font-size: 0.6em;
+}
+.item-pic{
+	position: relative;
+	border: 2px solid #3f0c1f;
+	overflow: hidden;
+	padding: 0;
+	margin-right: -15px;
+	margin-left: auto;
+	margin-bottom:15px;
+	max-width: 250px;    /*since we made image responsive and width is 250px*/
+}
+.item-pic div{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80px;
+	background-color: #557c3e;
+	text-align: center;
+}
+.item-description{
+	padding-right: 30px;
+}
+h3.item-title{
+	margin: 0 0 10px;
+	font-weight: bold;
+	color: black;
+	background-color: yellow;
+}
+.item-details{
+	font-size: .9em;
+	font-style: italic;
+}
+/*END OF SINGLE CATEGORY PAGE*/
+
+/******LARGE DEVICES ONLY***********/
+@media (min-width: 1200px){
+	 .container .jumbotron{
+        background: url('../images/large.jpg') no-repeat;
+        height: 700px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 0.5px solid #3f0c1f;           /*instead of having it repeatedly, for each container jumbotron, we can write outside also*/
+	}                                           /*like .container jumbotron and then, box shadow and border details*/
+}
+/*medium devices*/
+@media (min-width: 992px) and (max-width: 1199px){
+	/*header*/
+   #logo-img{
+    background: url('../images/medium.jpg') no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 5px 5px 5px 0px;
+	/*end header*/
+    }
+	/*home page*/
+     .container .jumbotron{
+	background: url('../images/mediumrest.jpg') no-repeat;
+    height: 558px;
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+   }
+}
+
+/*small devices only*/
+@media (min-width: 768px) and (max-width: 991px){
+    .container .jumbotron{
+   	background: url('../images/imf1.jpg') no-repeat;
+   	height: 432px;
+   	box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+   }
+}
+/*extra small devices only*/
+@media (max-width: 767px){
+	 /*header*/
+     .navbar-brand{
+     	padding-top: 10px;
+     	height: 80px;
+     }
+     .navbar-brand h1{   /*restaurant name*/
+           padding-top: 0px;
+           font-size: 4vw; /*1 vw= 1% of viewport width*/
+     }
+     .navbar-brand p{    /*halal*/
+        font-size: .6em;
+        margin-top: 10px;
+     }
+     #collapsable-nav a span{
+	   font-size: 1em;
+	   margin-right: 7px;
+     }
+     #call-btn >a{
+       font-size: 1.5em;
+       display: block;
+       margin: 0 20px;
+       padding: 10px;
+       border: 2px solid #fff;
+       background-color: #f6b319;
+       color: #951c49;
+     }
+     #xs-deliver{
+     	margin-top: 5px;
+     	font-size: .7em;
+     	letter-spacing: .1em;
+     	text-transform: uppercase;
+     }
+     /*end of header*/
+     /*start of footer*/
+     .panel-footer section{
+     	margin-bottom: 30px;
+     	text-align: center;
+     }
+     .panel-footer section:nth-child(3){
+     	margin-bottom: 0px;     /*for the last one, we dont require margin bottom*/
+    }
+    .panel-footer section hr{
+    	width: 50%;
+    }
+     /*end of footer*/
+     /*home page*/
+     .container .jumbotron{
+        margin-top: 30px;
+        padding: 0;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+     } 
+
+     #menu-title, #special-title{
+     	width: 360px;
+     	margin: 0 auto 15px;
+     }
+     /*end of home page*/
+     
+     .item-pic{
+     	margin-right: auto;
+     }
+     .menu-item-tile .item-price{
+     	text-align: center;
+     }
+     .item-description{
+     	text-align: center;
+     }
+}
+/*for super extra small devices*/
+@media (max-width: 479px){
+	.navbar-brand h1{
+		padding-top: -5px;
+		font-size: 5.25vw;
+		line-height: 0.85;
+	}
+	.navbar-brand p{
+		/*wanted to make changes for halal but, will do later*/
+	}
+    #menu-title, #specials-title{
+    	width: 280px;
+    	margin: 0 auto 15px;
+    }
+
+    .col-xxs-12{
+    	position: relative;   /*defined our own from bootstrap.css*/
+    	min-height: 1px;
+    	padding-right: 15px;
+    	padding-left: 15px;
+    	float: left;
+    	width: 100%
+    }
+}
