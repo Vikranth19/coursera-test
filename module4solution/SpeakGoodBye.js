@@ -13,7 +13,7 @@
 // DO NOT attach the speakWord variable to the 'byeSpeaker' object.
 (function(window){
    var byeSpeaker={};
-   var speakWord = "Hello";
+   var speakWord = "Good Bye";
 
   // STEP 4: Rewrite the 'speak' function such that it is attached to the
   // helloSpeaker object instead of being a standalone function.
